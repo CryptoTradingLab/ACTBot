@@ -1,0 +1,11 @@
+To trade on signals from the site, you need to open ports in the firewall through the CMD console from the administrator
+
+netsh advfirewall firewall add rule name="80 port" protocol="TCP" localport=80 action=allow dir=IN
+
+netsh advfirewall firewall add rule name="443 port" protocol="TCP" localport=443 action=allow dir=IN
+
+
+netsh advfirewall firewall add rule name="80 port" protocol="TCP" localport=80 action=allow dir=OUT
+
+
+netsh advfirewall firewall add rule name="443 port" protocol="TCP" localport=443 action=allow dir=OUT
